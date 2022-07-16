@@ -1,3 +1,5 @@
+JavaScript Шаблоны
+---
 >https://dmitriy-1986.github.io/Learn-JS-Template/learn-1.html 
 
 >https://dmitriy-1986.github.io/Learn-JS-Template/learn-2.html
@@ -18,4 +20,3 @@
 
 >https://dmitriy-1986.github.io/Learn-JS-Template/learn-10.html
 
----
