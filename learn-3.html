@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .btn-size {
+            display: inline-block;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 1px 1px 1px lightgrey;
+        }
+    </style>
+</head>
+<body>
+<p id="size-16" class="btn-size">Размер шрифта 16 пикселей</p>
+<p id="size-20" class="btn-size">Размер шрифта 20 пикселей</p>
+<p id="size-24" class="btn-size">Размер шрифта 24 пикселей</p>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci at consectetur, deleniti dignissimos
+    distinctio dolore dolores doloribus eveniet ex excepturi exercitationem expedita, facere fuga illum, in labore
+    maxime minima nihil nisi odit omnis porro quasi qui quo recusandae rerum sequi sunt ut voluptates! Cupiditate ipsa,
+    itaque nostrum perferendis provident quo ratione reprehenderit voluptate. Ad aliquam architecto consectetur
+    distinctio eveniet illum, numquam perferendis quibusdam saepe, sed sit soluta! Accusamus amet aperiam cumque, ea
+    illum iusto minima minus mollitia officiis quam repellendus, sit voluptatibus! Accusamus, accusantium amet
+    architecto autem deserunt distinctio eveniet facere fuga iure necessitatibus nobis perferendis, quae quidem
+    repudiandae.
+</p>
+<script>
+let btnSize16, btnSize20, btnSize24, size16, size20, size24;
+btnSize16 = document.getElementById('size-16');
+btnSize20 = document.getElementById('size-20');
+btnSize24 = document.getElementById('size-24');
+
+size16 = makeSize(16); size20 = makeSize(20); size24 = makeSize(24);
+btnSize16.addEventListener('click', size16);
+btnSize20.addEventListener('click', size20);
+btnSize24.addEventListener('click', size24);
+
+function makeSize(size) {
+    return function () {
+        document.body.style.fontSize = size + 'px';
+    }
+}
+</script>
+</body>
+</html>

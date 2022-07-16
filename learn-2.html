@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    let add = new Function('x', 'y', 'return x + y');
+    var res = add(2, 3);
+    document.write(res);
+
+    //callback function
+    function doOperation(callback) {
+        //выполнение какой то операции
+        callback();
+    }
+
+    function showAlert() {
+        alert('Hello from callback');
+    }
+
+    doOperation(showAlert);
+
+    (function() {
+        let days, today, msg;
+
+        days = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'];
+        today = new Date();
+        msg = 'Сегодня: ' + days[today.getDay()];
+
+        alert(msg);
+    }());
+</script>
+</body>
+</html>
