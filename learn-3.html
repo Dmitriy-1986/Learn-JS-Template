@@ -36,12 +36,13 @@
     repudiandae.
 </p>
 <script>
-let btnSize16, btnSize20, btnSize24, size16, size20, size24;
-btnSize16 = document.getElementById('size-16');
-btnSize20 = document.getElementById('size-20');
-btnSize24 = document.getElementById('size-24');
+let btnSize16 = document.getElementById('size-16'),
+    btnSize20 = document.getElementById('size-20'),
+    btnSize24 = document.getElementById('size-24'),
+    size16 = makeSize(16),
+    size20 = makeSize(20),
+    size24 = makeSize(24);
 
-size16 = makeSize(16); size20 = makeSize(20); size24 = makeSize(24);
 btnSize16.addEventListener('click', size16);
 btnSize20.addEventListener('click', size20);
 btnSize24.addEventListener('click', size24);
