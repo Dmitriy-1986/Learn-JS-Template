@@ -1,33 +1,36 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
 
-<script>
-    
-let app = {
-	data: [{name: 'John'}, {name: 'Ivan'}, {name: 'Illya'},],
+    <script>
 
-	dataFunction: function() {
-		let ul = document.createElement('ul');
-		document.body.append(ul);
+        let app = {
+            data: [{ name: 'John' }, { name: 'Ivan' }, { name: 'Illya' },],
 
-		for (let i = 0; i < this.data.length; i++) {
-			let li = document.createElement('li');
-			li.innerHTML = this.data[i].name;
-			li.addEventListener('click', () => {alert(this.data[i].name)})
-			ul.append(li);
-		}
-	}
-}
-app.dataFunction();
-    
-</script>
+            dataFunction: function () {
+                let ul = document.createElement('ul');
+                document.body.append(ul);
+
+                for (let i = 0; i < this.data.length; i++) {
+                    let li = document.createElement('li');
+                    li.innerHTML = this.data[i].name;
+                    li.addEventListener('click', () => { alert(this.data[i].name) })
+                    ul.append(li);
+                }
+            }
+        }
+        app.dataFunction();
+
+    </script>
 </body>
+
 </html>
