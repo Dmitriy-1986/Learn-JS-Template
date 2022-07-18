@@ -11,6 +11,23 @@
 
 <script>
     
+let app = {
+	data: [{name: 'John'}, {name: 'Ivan'}, {name: 'Illya'},],
+
+	myFunction: function() {
+		let ul = document.createElement('ul');
+		document.body.append(ul);
+
+		for (let i = 0; i< this.data.length; i++){
+			let li = document.createElement('li');
+			li.innerHTML = this.data[i].name;
+			li.addEventListener('click', () => {alert(this.data[i].name)})
+			ul.append(li);
+		}
+	}
+}
+app.myFunction();
+    
 </script>
 </body>
 </html>
