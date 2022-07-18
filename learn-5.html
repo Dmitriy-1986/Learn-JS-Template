@@ -10,7 +10,22 @@
 <body>
 
 <script>
-    
+    // Шаблон модуль - позволяет структурировать и организовывать програмный код по мере увеличения его объема
+    App.util.calc = (function () {
+        let x, y;
+        
+        return {
+            add: function () {
+                return x + y;
+            },
+            setX: function (val) {
+                x = val;
+            },
+            setY: function (val) {
+            y = val;
+            }
+        }
+    }());
 </script>
 </body>
 </html>
